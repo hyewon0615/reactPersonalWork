@@ -1,8 +1,8 @@
 import React from 'react'
 import './App.css';
 import { useState } from 'react';
-import Listcard from './component/Listcard';
-import Donelist from './component/Donelist';
+import Listcard from './Listcard';
+import Donelist from './Donelist';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
   const titleHandler = (event) => { setTitle(event.target.value) }
 
 
-
+//과한 유효성 검사 인가..?
   const addListBtnEvent = (event) => {
     event.preventDefault()
 

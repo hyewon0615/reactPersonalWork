@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Listcard from './component/Listcard';
 import Donelist from './component/Donelist';
 
+
 function App() {
   const [todo, setTodo] = useState([])
   const [title, setTitle] = useState('')
@@ -104,6 +105,8 @@ function App() {
         todo={todo}
         removeBtn={removeListBtnEvent}
         changeBtn={changeDoneState} />
+        
+        {/* 컴포넌트 나누고 보니까 Listcard랑Donelist같은 props를 받으니까 하나로 하는 게 낫지 않았을까 싶네.. */}
 
 
 
